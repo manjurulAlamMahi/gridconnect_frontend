@@ -1,0 +1,58 @@
+/* Neon / glow styles used by Pricing.tsx
+   Drop this into your global CSS import or a dedicated file that is imported by the component.
+*/
+
+.neon-card {
+  background: linear-gradient(
+    180deg,
+    rgba(14, 16, 18, 0.74),
+    rgba(9, 10, 11, 0.6)
+  );
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 40px rgba(200, 20, 20, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+/* stronger border / glow for highlighted plan */
+.border-neon {
+  border: 1px solid rgba(220, 30, 30, 0.75);
+}
+
+/* small red rounded badge with subtle glow */
+.neon-badge {
+  background: linear-gradient(180deg, #ff4b4b, #c92a2a);
+  box-shadow: 0 6px 22px rgba(200, 30, 30, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* subtle shadow used on buttons / badges */
+.shadow-neon {
+  box-shadow: 0 10px 40px rgba(200, 20, 20, 0.18);
+}
+
+/* red blur shadow for cards */
+.red-blur-shadow {
+  box-shadow: 0 25px 50px -12px rgba(220, 20, 20, 0.4);
+}
+
+/* price styling helper */
+.price {
+  /* preserve numeric alignment */
+  letter-spacing: -0.02em;
+}
+
+/* hover lift */
+.neon-card:hover {
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.6), 0 0 70px rgba(220, 20, 20, 0.12);
+}
+
+/* muted card fallback (driver plan) */
+.bg-muted\/60 {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 21, 24, 0.6),
+    rgba(12, 15, 18, 0.5)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
